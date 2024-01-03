@@ -1,7 +1,7 @@
 import { Asana } from '../../types'
 
 export const getAsanas = async () : Promise<Asana []> => {
-    const url = 'http://localhost:3000/Posturas'
+    const url = 'https://prueba-deployar.vercel.app/posturas'
     return fetch(url, {
         method: 'GET',
         headers: {
