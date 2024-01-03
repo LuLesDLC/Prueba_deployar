@@ -12,7 +12,7 @@ async function consult_asanas() {
         return asanas;
         // control de excepciones
     } catch (error) {
-        console.log(error)
+        console.log(error);
         return { error: error };
     } finally {
         await prisma.$disconnect();
