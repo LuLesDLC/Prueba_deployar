@@ -12,7 +12,8 @@ async function consult_asanas() {
         return asanas;
         // control de excepciones
     } catch (error) {
-        return { error: "Error al consultar la base de datos" };
+        console.log(error)
+        return { error: error };
     } finally {
         await prisma.$disconnect();
     }

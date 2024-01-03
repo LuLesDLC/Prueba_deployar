@@ -12,6 +12,7 @@ async function consult_morfemas() {
         return morfemas;
         // control de excepciones
     } catch (error) {
+        console.log(error);
         return { error: error };
     } finally {
         await prisma.$disconnect();
