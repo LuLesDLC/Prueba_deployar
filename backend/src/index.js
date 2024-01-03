@@ -14,7 +14,7 @@ app.use(express.json());
 //añadimos las rutas al servidor
 app.use("/", router_asanas);
 app.use("/", router_morfemas);
-app.use("", (req, res) => { res.send("Oyendo") })
+app.use("/", (req, res) => { res.send("Oyendo") })
     //activamos el servidor
 app.listen(3000, () => {
     console.log("Servidor escuchando en http://localhost:3000");
